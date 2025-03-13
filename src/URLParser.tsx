@@ -67,7 +67,7 @@ const URLParser: React.FC = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const renderUrlComponents = (): JSX.Element => {
+  const renderUrlComponents = () => {
     if (!parsedUrl || parsedUrl.error) {
       return (
         <div className="bg-red-50 p-4 rounded border border-red-200 text-red-800 mt-6">
