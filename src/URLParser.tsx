@@ -390,7 +390,7 @@ const URLParser: React.FC = () => {
                           {value === "" ? (
                             <span className="text-gray-400">-</span>
                           ) : (
-                            value
+                            value.toString()
                           )}
                         </td>
                       );
@@ -430,7 +430,7 @@ const URLParser: React.FC = () => {
                       (url) => url.searchParams?.[param] || null,
                     );
                     const firstValue = values[0];
-                    const hasDiff = values.some((v) => v !== firstValue);
+                    //const hasDiff = values.some((v) => v !== firstValue);
 
                     return (
                       <tr key={param} className="hover:bg-gray-50">
@@ -523,7 +523,7 @@ const URLParser: React.FC = () => {
                             : `${colorStyle.bg} ${colorStyle.text}`
                         }`}
                       >
-                        {value}
+                        {value.toString()}
                       </td>
                     );
                   })}
