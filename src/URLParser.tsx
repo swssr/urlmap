@@ -629,14 +629,14 @@ const URLParser: React.FC = () => {
       </p>
 
       {/* URL Input Section */}
-      <div className="mb-8 bg-white rounded-lg shadow-sm border border-gray-200 p-4">
+      <div className="mb-8 bg-white rounded-lg shadow-lg border border-gray-200 p-4">
         <h2 className="text-lg font-medium mb-4">Enter URLs for Analysis</h2>
 
         {urlList.map((url, index) => (
           <div key={index} className="flex items-center mb-3">
             <div className="flex-grow mr-2">
               <div className="flex items-center">
-                <span className="mr-2 text-sm font-medium text-gray-600">
+                <span className="mr-2 text-sm font-medium text-nowrap text-gray-600">
                   URL {index + 1}
                 </span>
                 <input

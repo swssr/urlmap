@@ -1,5 +1,6 @@
 export interface ParsedURL {
   href?: string;
+  auth?: string;
   protocol?: string;
   username?: string;
   password?: string;
